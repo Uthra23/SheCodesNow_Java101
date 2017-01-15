@@ -25,44 +25,16 @@ public class Calculator {
         answer = add(num1, num2); 
         System.out.println("Your Answer is "+ answer);
     }
-    else if (operation.equals("-"))
+    else 
     {
-        answer = subtract(num1, num2); 
-        System.out.println("Your Answer is "+ answer);
-    }       
-    else if (operation.equals("*"))
-    {
-        answer = multiply(num1, num2); 
-        System.out.println("Your Answer is "+ answer);
-    }   
-    else if (operation.equals("/"))
-    {
-        answer = divide(num1, num2); 
-        System.out.println("Your Answer is "+ answer);
+        System.out.println("No other operations supported at this point");
     }
   }
   
-  public static int add(int x, int y)
+    public static int add(int x, int y)
     {
         int result = x + y;
         return result;
     }
     
-    public static int subtract(int x, int y)
-    {
-        int result = x - y;
-        return result;
-    }
-    
-    public static int multiply(int x, int y)
-    {
-        int result = x * y;
-        return result;
-    }
-    
-    public static int divide(int x, int y)
-    {
-        int result = x / y;
-        return result;
-    }
 }
